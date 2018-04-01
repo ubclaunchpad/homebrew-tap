@@ -9,3 +9,8 @@ various [UBC Launch Pad](https://www.ubclaunchpad.com) projects.
 ```
 brew tap ubclaunchpad/tap
 ```
+
+
+## Available Formulae
+
+- [**`inertia`**](https://github.com/ubclaunchpad/inertia) — Simple, self-hosted continuous deployment
