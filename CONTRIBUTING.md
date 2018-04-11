@@ -1,3 +1,8 @@
+## Creating a Formula
+
+See Homebrew's [Formula Cookbook](https://github.com/Homebrew/brew/blob/master/docs/Formula-Cookbook.md).
+
+
 ## Updating a Formula
 
 Suppose we want to update the Inertia formula to its newest release. First,
