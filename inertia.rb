@@ -3,7 +3,7 @@ class Inertia < Formula
   homepage "https://github.com/ubclaunchpad/inertia"
   version "0.2.0"
   url "https://github.com/ubclaunchpad/inertia/releases/download/v#{version}/inertia.v#{version}.darwin.386"
-  sha256 "a687116c7fe155ed2150f86843f933c506eeb5335547e79e4786dec2ae16fc6b"
+  sha256 "b656483ba3058a38c04a9c398f911ce99dba2937e0352221c88597622b3013f8"
   bottle :unneeded
 
   def install
