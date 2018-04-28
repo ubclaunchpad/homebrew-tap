@@ -1,9 +1,9 @@
 class Inertia < Formula
   desc "Simple, self-hosted continuous deployment"
   homepage "https://github.com/ubclaunchpad/inertia"
-  version "0.2.0"
+  version "0.3.0"
   url "https://github.com/ubclaunchpad/inertia/releases/download/v#{version}/inertia.v#{version}.darwin.386"
-  sha256 "b656483ba3058a38c04a9c398f911ce99dba2937e0352221c88597622b3013f8"
+  sha256 "6acff87b76e1ec38c2c9f89f77d196e15fcc5bab1b0230e9b2905b27bbb0b20f"
   bottle :unneeded
 
   def install
