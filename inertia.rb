@@ -11,6 +11,12 @@ class Inertia < Formula
     bin.install "inertia"
   end
 
+  devel do
+    version "0.4.0-rc2"
+    url "https://github.com/ubclaunchpad/inertia/releases/download/v#{version}/inertia.v#{version}.darwin.386"
+    sha256 "0a20a1606699790e718a9a3de07b641972433aa302233a1194e3dc6ee9b55a63"
+  end
+
   test do
     assert_match version.to_s, shell_output("#{bin}/inertia --version")
   end
