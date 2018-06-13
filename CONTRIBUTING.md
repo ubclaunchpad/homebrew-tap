@@ -65,3 +65,32 @@ $ brew install inertia.rb
 
 Audit the formula for errors using `brew audit formula.rb` for good measure,
 and submit that PR! :rocket:
+
+## Adding Unstable/Prerelease Versions to your Formula
+
+See [Homebrew's unstable formula version feature](https://github.com/Homebrew/brew/blob/master/docs/Formula-Cookbook.md#unstable-versions-devel-head).
+
+In short, just add a `devel` spec to your application formula:
+
+```ruby
+class Inertia < Formula
+  # ...stuff
+
+  devel do
+    version "0.4.0-rc2"
+    url "https://github.com/ubclaunchpad/inertia/releases/download/v#{version}/inertia.v#{version}.darwin.386"
+    sha256 "0a20a1606699790e718a9a3de07b641972433aa302233a1194e3dc6ee9b55a63"
+  end
+
+  # ...stuff
+end
+```
+
+This version of your application can now be installed using the `--devel` flag:
+
+```bash
+# from file
+$ brew install inertia.rb --devel
+# from tap
+$ brew install inertia --devel
+```
