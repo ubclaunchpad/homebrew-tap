@@ -4,15 +4,15 @@ class Inertia < Formula
   bottle :unneeded
 
   # Stable
-  version "0.4.0"
+  version "0.4.2"
   url "https://github.com/ubclaunchpad/inertia/releases/download/v#{version}/inertia.v#{version}.darwin.386"
-  sha256 "b924b123eb852969489572b46404e416728e78519ca3c6025f0441124a2e7024"
+  sha256 "d8742d9aa1c83f0b7ac352f86e675ad25de9826f19f531e99834f6e66ae8b563"
 
   # Prerelease
   devel do
-    version "0.4.0"
+    version "0.4.2"
     url "https://github.com/ubclaunchpad/inertia/releases/download/v#{version}/inertia.v#{version}.darwin.386"
-    sha256 "b924b123eb852969489572b46404e416728e78519ca3c6025f0441124a2e7024"
+    sha256 "d8742d9aa1c83f0b7ac352f86e675ad25de9826f19f531e99834f6e66ae8b563"
   end
 
   # Build from latest commit
