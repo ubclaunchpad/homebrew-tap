@@ -10,9 +10,9 @@ class Inertia < Formula
 
   # Prerelease
   devel do
-    version "0.4.4"
-    url "https://github.com/ubclaunchpad/inertia/releases/download/v#{version}/inertia.v#{version}.darwin.386"
-    sha256 "12d967a0378924e48062457acc812c2741b634b9ec3a2724c7340ea285986c16"
+    version "0.5.0-rc1"
+    url "https://github.com/ubclaunchpad/inertia/releases/download/v#{version}/inertia.v#{version}.darwin.amd64"
+    sha256 "1288a4d39add6a93977eb60f888abf0d1a718a08e156b1d87f10412153fa08ef"
   end
 
   # Build from latest commit
@@ -33,7 +33,11 @@ class Inertia < Formula
         system "go", "build", "-o", "#{bin}/inertia"
       end
     else
-      mv "inertia.v#{version}.darwin.386", "inertia"
+      if build.devel?
+        mv "inertia.v#{version}.darwin.amd64", "inertia"
+      else
+        mv "inertia.v#{version}.darwin.386", "inertia"
+      end
       bin.install "inertia"
     end
   end
