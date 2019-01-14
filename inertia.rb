@@ -10,9 +10,9 @@ class Inertia < Formula
 
   # Prerelease
   devel do
-    version "0.5.0-rc1"
+    version "0.5.0-rc3"
     url "https://github.com/ubclaunchpad/inertia/releases/download/v#{version}/inertia.v#{version}.darwin.amd64"
-    sha256 "1288a4d39add6a93977eb60f888abf0d1a718a08e156b1d87f10412153fa08ef"
+    sha256 "432f9124a562357dc87096bdaca40375321e062f951a4b210c7af9615b0b2b4e"
   end
 
   # Build from latest commit
