@@ -4,15 +4,15 @@ class Inertia < Formula
   bottle :unneeded
 
   # Stable
-  version "0.4.4"
-  url "https://github.com/ubclaunchpad/inertia/releases/download/v#{version}/inertia.v#{version}.darwin.386"
-  sha256 "12d967a0378924e48062457acc812c2741b634b9ec3a2724c7340ea285986c16"
+  version "0.5.0"
+  url "https://github.com/ubclaunchpad/inertia/releases/download/v#{version}/inertia.v#{version}.darwin.amd64"
+  sha256 "bec22975dbaed4f9c08fb94a60e52762857c857b55d75e7ddce1ce54ce439ccf"
 
   # Prerelease
   devel do
-    version "0.5.0-rc3"
+    version "0.5.0"
     url "https://github.com/ubclaunchpad/inertia/releases/download/v#{version}/inertia.v#{version}.darwin.amd64"
-    sha256 "432f9124a562357dc87096bdaca40375321e062f951a4b210c7af9615b0b2b4e"
+    sha256 "bec22975dbaed4f9c08fb94a60e52762857c857b55d75e7ddce1ce54ce439ccf"
   end
 
   # Build from latest commit
@@ -33,11 +33,7 @@ class Inertia < Formula
         system "go", "build", "-o", "#{bin}/inertia"
       end
     else
-      if build.devel?
-        mv "inertia.v#{version}.darwin.amd64", "inertia"
-      else
-        mv "inertia.v#{version}.darwin.386", "inertia"
-      end
+      mv "inertia.v#{version}.darwin.amd64", "inertia"
       bin.install "inertia"
     end
   end
