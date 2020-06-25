@@ -8,13 +8,6 @@ class Inertia < Formula
   url "https://github.com/ubclaunchpad/inertia/releases/download/v#{version}/inertia.v#{version}.darwin.amd64"
   sha256 "6a580678542bfe198dd19974103b11e7874778e0344771afde3e6b6720807a1c"
 
-  # Prerelease
-  devel do
-    version "0.6.0"
-    url "https://github.com/ubclaunchpad/inertia/releases/download/v#{version}/inertia.v#{version}.darwin.amd64"
-    sha256 "6a580678542bfe198dd19974103b11e7874778e0344771afde3e6b6720807a1c"
-  end
-
   # Build from latest commit
   head "https://github.com/ubclaunchpad/inertia.git"
   head do
