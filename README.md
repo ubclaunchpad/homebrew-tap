@@ -12,7 +12,6 @@ brew tap ubclaunchpad/tap
 ## Available Formulae
 
 - [**`inertia`**](https://github.com/ubclaunchpad/inertia) — Effortless, self-hosted continuous deployment for small teams and projects
-    - install with `--devel` for prereleases
     - install with `--HEAD` to build from trunk
 
 - [**`cumulus`**](https://github.com/ubclaunchpad/cumulus) — Cryptocurrency that doesn't waste your time
