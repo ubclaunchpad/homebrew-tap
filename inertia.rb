@@ -4,9 +4,9 @@ class Inertia < Formula
   bottle :unneeded
 
   # Stable
-  version "0.6.1"
+  version "0.6.2"
   url "https://github.com/ubclaunchpad/inertia/releases/download/v#{version}/inertia.v#{version}.darwin.amd64"
-  sha256 "3bcd78d1c828020f9387862a5eacc952deaaa464e3cc8f336ef20324ee13941e"
+  sha256 "1efcae69e1086fec74140b27b46c7fdbf9df622b6d7341a2128f1d5b3b92d9d1"
 
   # Build from latest commit
   head "https://github.com/ubclaunchpad/inertia.git"
